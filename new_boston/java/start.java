@@ -1,13 +1,13 @@
+import java.util.Scanner;
+
 //everything begins with a class
 class apples {
   public static void main(String args[]){
-    //double: decimal var type
-    double tuna;
-    tuna = 5.28;
+    //Scanner allows user input
+    //System.in means system input
+    Scanner aidan =  new Scanner(System.in);
 
-    System.out.print("I want ");
-    System.out.print(tuna);
-    System.out.println(" movies");
-    System.out.println("apples");
+    //.nextLine() allows a pause for input
+    System.out.println(aidan.nextLine());
   }
 }
