@@ -1,18 +1,23 @@
-import java.util.Scanner;
-
 //everything begins with a class
 class apples {
   public static void main(String args[]){
+    int age;
+    age = 2;
 
-    //Scanner allows user input
-    //System.in means system input
-    Scanner aidan =  new Scanner(System.in);
+    switch (age){
+      case 1:
+        System.out.println("You can crawl");
+        break;
+      case 2:
+        System.out.println("You can talk");
+        break;
+      case 3:
+        System.out.println("You can get in trouble");
+        break;
+      default:
+        System.out.println("I don't know how old you are");
+      break;
 
-    int girls, boys, people;
-    girls = 10;
-    boys = 3;
-    //modulus
-    people =  girls % boys;
-    System.out.println(people);
+    }
   }
 }
