@@ -1,13 +1,8 @@
 //everything begins with a class
 class apples {
   public static void main(String args[]){
-      int counter = 0;
+    tuna aidan = new tuna();
 
-      while (counter < 10) {
-        System.out.println(counter);
-        counter++;
-      }
-
-    
+    aidan.simpleMessage();
   }
 }
