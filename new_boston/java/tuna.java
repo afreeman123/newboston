@@ -1,7 +1,17 @@
 public class tuna {
-  //void means its gonna do something but won't return any data
-  public void simpleMessage(String name) {
-    System.out.println("Hello " + name);
+  private String girlName;
+
+  public void setName(String name) {
+    girlName = name;
+  }
+
+  public String getName() {
+    return girlName;
+  }
+
+  public void saying() {
+    //substitues what second parameter returns
+    System.out.printf("Your first gf was %s", getName());
   }
 
 }

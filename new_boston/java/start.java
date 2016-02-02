@@ -7,10 +7,12 @@ class apples {
       Scanner input = new Scanner(System.in);
       tuna tunaObject = new tuna();
 
-      System.out.println("Enter your name here: ");
+      System.out.println("Enter name of your first girlfriend here: ");
       String name = input.nextLine();
 
-      tunaObject.simpleMessage(name);
+      //Using functions from tuna class
+      tunaObject.setName(name);
+      tunaObject.saying();
 
   }
 }
