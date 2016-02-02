@@ -1,6 +1,11 @@
 public class tuna {
   private String girlName;
 
+  //constructor - has same name as class
+  public tuna (String name) {
+    girlName = name;
+  }
+
   public void setName(String name) {
     girlName = name;
   }

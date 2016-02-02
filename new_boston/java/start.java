@@ -4,15 +4,10 @@ import java.util.Scanner;
 class apples {
   public static void main(String args[]){
 
-      Scanner input = new Scanner(System.in);
-      tuna tunaObject = new tuna();
-
-      System.out.println("Enter name of your first girlfriend here: ");
-      String name = input.nextLine();
-
-      //Using functions from tuna class
-      tunaObject.setName(name);
-      tunaObject.saying();
+    tuna tunaObject = new tuna("Shauna");
+    tuna tunaObject2 = new tuna("Nicole");
+    tunaObject.saying();
+    tunaObject2.saying();
 
   }
 }
