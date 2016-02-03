@@ -3,11 +3,10 @@ import java.util.Scanner;
 //everything begins with a class
 class apples {
   public static void main(String args[]){
+    int age = 21;
 
-    tuna tunaObject = new tuna("Shauna");
-    tuna tunaObject2 = new tuna("Nicole");
-    tunaObject.saying();
-    tunaObject2.saying();
+    //conditional operator------\/
+    System.out.println(age > 50 ? "You are old" : "You are young");
 
   }
 }
