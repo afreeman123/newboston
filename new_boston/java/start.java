@@ -3,10 +3,20 @@ import java.util.Scanner;
 //everything begins with a class
 class apples {
   public static void main(String args[]){
-    int age = 21;
+    Scanner input =  new Scanner(System.in);
+    int total = 0;
+    int grade;
+    int average;
 
-    //conditional operator------\/
-    System.out.println(age > 50 ? "You are old" : "You are young");
+    //trying a for statement
+    for(int counter = 1;counter<=10;counter++) {
+      System.out.println("Number " + counter);
+      grade = input.nextInt();
+      total += grade;
+    }
+    average = total/10;
+
+    System.out.println("Your average is " + average);
 
   }
 }
