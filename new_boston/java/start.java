@@ -9,8 +9,8 @@ class apples {
     int number;
 
     for(int counter=1;counter<=10;counter++) {
-      //takes a random value between 0 and 5
-      number = dice.nextInt(6);
+      //takes a random value between 1 and 6
+      number = 1 + dice.nextInt(6);
       System.out.println(number);
     }
   }
