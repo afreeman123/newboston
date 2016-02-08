@@ -2,20 +2,13 @@ import java.util.Random;
 
 class apples {
   public static void main(String args[]){
-    //array
-    int aidan[] = new int[10];
-    //length of array-----^^
+    System.out.println("Index\tValue");
+    // \t makes 5 spaces
 
-    Random number = new Random();
+    int aidan[] = {32, 12, 18, 54, 2};
 
-    for(int i=0;i<aidan.length;i++) {
-      aidan[i] = Math.abs(number.nextInt());
-      System.out.println(aidan[i]);
+    for(int counter=0;counter<aidan.length;counter++) {
+      System.out.println(counter + "\t" + aidan[counter]);
     }
-
-    //array initialiser
-    int bucky[] = {2,4,5,7,9};
-
-    System.out.println(bucky[2]);
   }
 }
