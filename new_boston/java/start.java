@@ -1,17 +1,21 @@
-//
 import java.util.Random;
 
 class apples {
   public static void main(String args[]){
-    //Program to simulate a dice
+    //array
+    int aidan[] = new int[10];
+    //length of array-----^^
 
-    Random dice = new Random();
-    int number;
+    Random number = new Random();
 
-    for(int counter=1;counter<=10;counter++) {
-      //takes a random value between 1 and 6
-      number = 1 + dice.nextInt(6);
-      System.out.println(number);
+    for(int i=0;i<aidan.length;i++) {
+      aidan[i] = Math.abs(number.nextInt());
+      System.out.println(aidan[i]);
     }
+
+    //array initialiser
+    int bucky[] = {2,4,5,7,9};
+
+    System.out.println(bucky[2]);
   }
 }
