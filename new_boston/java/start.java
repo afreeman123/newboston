@@ -2,13 +2,22 @@ import java.util.Random;
 
 class apples {
   public static void main(String args[]){
-    System.out.println("Index\tValue");
-    // \t makes 5 spaces
+    Random rand = new Random();
 
-    int aidan[] = {32, 12, 18, 54, 2};
+    int freq[] = new int[7];
+    int count = 0;
 
-    for(int counter=0;counter<aidan.length;counter++) {
-      System.out.println(counter + "\t" + aidan[counter]);
+    for(int roll=1;roll<=1000;roll++) {
+      ++freq[1+rand.nextInt(6)];
     }
+
+    System.out.println("Face\tFrequency");
+
+    for(int face=1;face<freq.length;face++) {
+      count += freq[face];
+      System.out.println(face + "\t" + freq[face]);
+    }
+
+    System.out.println("Total rolls = " + count);
   }
 }
