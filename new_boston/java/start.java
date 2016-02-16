@@ -2,22 +2,14 @@ import java.util.Random;
 
 class apples {
   public static void main(String args[]){
-    Random rand = new Random();
+    int aidan[] = {3,4,5,6,7};
+    int total = 0;
 
-    int freq[] = new int[7];
-    int count = 0;
+    //enhanced for-loop
+    for(int x: aidan) {
+      total += x;
+    }//will add all the numbers in the array together
 
-    for(int roll=1;roll<=1000;roll++) {
-      ++freq[1+rand.nextInt(6)];
-    }
-
-    System.out.println("Face\tFrequency");
-
-    for(int face=1;face<freq.length;face++) {
-      count += freq[face];
-      System.out.println(face + "\t" + freq[face]);
-    }
-
-    System.out.println("Total rolls = " + count);
+    System.out.println(total);
   }
 }
