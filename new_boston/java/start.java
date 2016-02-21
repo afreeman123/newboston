@@ -1,19 +1,10 @@
 class apples {
   public static void main(String args[]){
-    System.out.println(average(45,46,32,89,67));
+      tuna tunaObject = new tuna();
+
+      System.out.println(tunaObject.toMilitary());
+      tunaObject.setTime(13, 27, 6);
+
+      System.out.println(tunaObject.toMilitary());
   }
-
-  //... = an elipse which means you dont know how many of that type you will
-  //be using as parameters
-  public static int average(int...numbers) {
-
-    int total = 0;
-    for (int x:numbers) {
-      total += x;
-    }
-
-    return total/numbers.length;
-
-  }
-
 }
