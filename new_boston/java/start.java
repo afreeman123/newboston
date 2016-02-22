@@ -6,5 +6,6 @@ class apples {
       tunaObject.setTime(13, 27, 6);
 
       System.out.println(tunaObject.toMilitary());
+      System.out.println(tunaObject.toString());
   }
 }
